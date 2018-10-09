@@ -1,19 +1,14 @@
 ---
-title: "Contact"
-logo: "/img/logo.svg"
+title: Contact
+logo: /img/preferences-contact-list.png
 contact_entries:
-  - heading: Location
-    text: "3153 Lynn Avenue, South San Francisco, California 94080"
-  - heading: Working hours
-    text: "Monday – Saturday: 9AM – 7PM We’re closed on Sundays"
+  - heading: Adresse
+    text: '3153 Lynn Avenue, South San Francisco, California 94080'
+  - heading: Téléphone
+    text: 04.02.03.04.05
+  - heading: E-mail
+    text: aaa.bbb@ccc.ddd
 ---
+C'est un plaisir de rester en contact avec vous, d'écouter vos idées et de répondre à vos questions. Nous essayons constamment de nous améliorer et vos retours nous sont indispensables.
 
-We’d love to get in touch with you and hear your ideas and
-questions. We strive to grow and improve constantly and your feedback
-is valuable for us.
-
-<h3 class="f4 b lh-title mb2">How can I get…?</h3>
-
-You can also use the form below for any inquiries about coffee
-availability, monthly subscriptions and scheduling a 1-on-1 session
-with our baristas. Don’t be shy, drop us a line!
+<h3 class="f4 b lh-title mb2">Contactez-nous :</h3>
