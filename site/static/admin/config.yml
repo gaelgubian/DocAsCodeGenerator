@@ -20,7 +20,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "site/content/epic"
     create: true
     fields:
-      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Name", name: "title", widget: "string"}
       - {label: "Type", name: "type", widget: "hidden", default: "Feature"}
       - {label: "Stereotype", name: "stereotype", widget: "hidden", default: "Epic"}
       - {label: "Alias", name: "alias", widget: "string", hint:"Identifiant unique de l'epic"}
@@ -41,7 +41,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "site/content/userstory"
     create: true
     fields:
-      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Name", name: "title", widget: "string"}
       - {label: "Type", name: "type", widget: "hidden", default: "UserStory"}
       - {label: "Stereotype", name: "stereotype", widget: "hidden", default: "UserStory"}
       - {label: "Alias", name: "alias", widget: "string", hint:"Identifiant unique de la User Story"}
