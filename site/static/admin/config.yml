@@ -15,6 +15,49 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "epic"
+    label: "Epic"
+    folder: "site/content/epic"
+    create: true
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Type", name: "type", widget: "hidden", default: "Feature"}
+      - {label: "Stereotype", name: "stereotype", widget: "hidden", default: "Epic"}
+      - {label: "Alias", name: "alias", widget: "string", hint:"Identifiant unique de l'epic"}
+      - {label: "Keywords", name: "keywords", widget: "string", required: "false"}
+      - {label: "Author", name: "author", widget: "string", required: "false"}
+      - {label: "Status", name: "status", widget: "select", default: "PROPOSED", options: ["PROPOSED", "TO DO", "IN PROGRESS", "READY FOR QA", "DONE", "CANCELED"]}
+      - {label: "Complexity", name: "complexity", widget: "select", default: "Medium", options: ["Easy", "Medium", "Difficult"]}
+      - {label: "Version", name: "version", widget: "string", default: "1.0"}
+      - {label: "Phase", name: "phase", widget: "string"}
+      - {label: "GUID", name: "guid", widget: "hidden", required: "false"}
+      - {label: "StoryPoints", name: "storypoints", widget: "number", valueType: "float", required: "false"}
+      - {label: "Linked Document", name: "linkeddocument", widget: "file", required: false}
+      - {label: "Created", name: "created", widget: "datetime"}
+      - {label: "Modified", name: "modified", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "userstory"
+    label: "User Story"
+    folder: "site/content/userstory"
+    create: true
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Type", name: "type", widget: "hidden", default: "UserStory"}
+      - {label: "Stereotype", name: "stereotype", widget: "hidden", default: "UserStory"}
+      - {label: "Alias", name: "alias", widget: "string", hint:"Identifiant unique de la User Story"}
+      - {label: "Keywords", name: "keywords", widget: "string", required: "false"}
+      - {label: "Author", name: "author", widget: "string", required: "false"}
+      - {label: "Status", name: "status", widget: "select", default: "PROPOSED", options: ["PROPOSED", "TO DO", "IN PROGRESS", "READY FOR QA", "DONE", "CANCELED"]}
+      - {label: "Complexity", name: "complexity", widget: "select", default: "Medium", options: ["Easy", "Medium", "Difficult"]}
+      - {label: "Version", name: "version", widget: "string", default: "1.0"}
+      - {label: "Phase", name: "phase", widget: "string"}
+      - {label: "GUID", name: "guid", widget: "hidden", required: "false"}
+      - {label: "StoryPoints", name: "storypoints", widget: "number", valueType: "float", required: "false"}
+      - {label: "Linked Document", name: "linkeddocument", widget: "file", required: false}
+      - {label: "Epic", name:"epic", widget: "relation", collection: "epic", searchFields: ["alias", "name"], valueField: "alias", displayFields: ["alias", "name"], required: "false"}
+      - {label: "Created", name: "created", widget: "datetime"}
+      - {label: "Modified", name: "modified", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     files:
